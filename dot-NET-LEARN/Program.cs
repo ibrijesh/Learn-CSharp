@@ -1,35 +1,24 @@
 ﻿using System;
 
-class  Program
+class Program
 {
     static void Main()
     {
-       // not allowed string name = null;
-       bool? areYouAdmin = null;
+        double f = 11223432423423234.34834534;
 
-       if (areYouAdmin == true)
-       {
-           Console.WriteLine("User is Admin");
-       }
-       else if (areYouAdmin == false)
-       {
-           Console.WriteLine("User is not Admin");
-       }
-       else
-       {
-           Console.WriteLine("User did not answer the question");
-       }
-       
-       
-       
-       // check struct value //
-       
-       int? ticketOnSale = 100;
+        int fi = (int)f;                    // it will -INT_MIN value as default
+        int ff = Convert.ToInt32(f);        // it will through exception as f is out of range of int32
 
-       int availableTicket = ticketOnSale ?? 0;
-       
-       Console.WriteLine("Available Ticket = {0}",availableTicket);
-       
+
+        // int to string
+
+        int a = 10;
+        string str = Convert.ToString(a);
+        Console.WriteLine(a);
+
+        // string to int
+        string s = "123";
+        int b = Convert.ToInt32(s);
+        Console.WriteLine(b);
     }
-    
 }
