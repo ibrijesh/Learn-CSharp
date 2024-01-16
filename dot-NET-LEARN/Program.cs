@@ -4,15 +4,25 @@ class Program
 {
     static void Main()
     {
-        int[] evenNumbers = new int[3];
+        Console.WriteLine("Enter Your Roll Number");
+        int userNumber = int.Parse(Console.ReadLine());
 
-        evenNumbers[0] = 1;
-        evenNumbers[1] = 2;
-        evenNumbers[2] = 3;
+        if (userNumber == 1)
+        {
+            Console.WriteLine("User Roll Number is 1");
+        }
+        else if (userNumber == 2)
+        {
+            Console.WriteLine("User Roll Number is 2");
+        }
+        else if (userNumber == 3)
+        {
+            Console.WriteLine("User Roll Number is 3");
+        }
+        else
+        {
+            Console.WriteLine("Your roll number not between 1 and 3");
+        }
 
-        //Console.WriteLine(evenNumbers);
-
-        for (int i = 0; i < 3; ++i)
-            Console.WriteLine(i + "-> "+evenNumbers[i]);
     }
 }
